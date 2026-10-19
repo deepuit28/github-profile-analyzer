@@ -28,3 +28,14 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# Maven build output
+target/
+
+# Environment variables
+.env
+.env.*
