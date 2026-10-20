@@ -32,6 +32,10 @@ The examples below assume the application is running locally on port `8080`. Rep
 | `GET` | `http://localhost:8080/api/github/octocat/analysis` | Repository totals and summary |
 | `GET` | `http://localhost:8080/api/github/octocat/languages` | Repository counts grouped by language |
 
+### Local frontend CORS
+
+The `/api/github/**` endpoints allow browser requests from `http://localhost:5173` and `http://localhost:5174` during local frontend development. CORS permits `GET` and preflight `OPTIONS` requests with the `Accept`, `Content-Type`, and `Authorization` headers. Credentials are not enabled, and other origins are not allowed.
+
 ### Example responses
 
 **Health**
